@@ -1,0 +1,255 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD0C09311D09CE0A00E78C39 /* ZipperSlug.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD0C09301D09CE0A00E78C39 /* ZipperSlug.h */; };
+		CD0C09331D09CE0A00E78C39 /* ZipperSlug.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09321D09CE0A00E78C39 /* ZipperSlug.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD0C092B1D09CE0A00E78C39 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				CD0C09311D09CE0A00E78C39 /* ZipperSlug.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CD0C092D1D09CE0A00E78C39 /* libZipperSlug.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZipperSlug.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD0C09301D09CE0A00E78C39 /* ZipperSlug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZipperSlug.h; sourceTree = "<group>"; };
+		CD0C09321D09CE0A00E78C39 /* ZipperSlug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZipperSlug.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD0C092A1D09CE0A00E78C39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD0C09241D09CE0A00E78C39 = {
+			isa = PBXGroup;
+			children = (
+				CD0C092F1D09CE0A00E78C39 /* ZipperSlug */,
+				CD0C092E1D09CE0A00E78C39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD0C092E1D09CE0A00E78C39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD0C092D1D09CE0A00E78C39 /* libZipperSlug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD0C092F1D09CE0A00E78C39 /* ZipperSlug */ = {
+			isa = PBXGroup;
+			children = (
+				CD0C09301D09CE0A00E78C39 /* ZipperSlug.h */,
+				CD0C09321D09CE0A00E78C39 /* ZipperSlug.m */,
+			);
+			path = ZipperSlug;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD0C092C1D09CE0A00E78C39 /* ZipperSlug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD0C09361D09CE0A00E78C39 /* Build configuration list for PBXNativeTarget "ZipperSlug" */;
+			buildPhases = (
+				CD0C09291D09CE0A00E78C39 /* Sources */,
+				CD0C092A1D09CE0A00E78C39 /* Frameworks */,
+				CD0C092B1D09CE0A00E78C39 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZipperSlug;
+			productName = ZipperSlug;
+			productReference = CD0C092D1D09CE0A00E78C39 /* libZipperSlug.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD0C09251D09CE0A00E78C39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Zachary Stegall";
+				TargetAttributes = {
+					CD0C092C1D09CE0A00E78C39 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CD0C09281D09CE0A00E78C39 /* Build configuration list for PBXProject "ZipperSlug" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD0C09241D09CE0A00E78C39;
+			productRefGroup = CD0C092E1D09CE0A00E78C39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD0C092C1D09CE0A00E78C39 /* ZipperSlug */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD0C09291D09CE0A00E78C39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0C09331D09CE0A00E78C39 /* ZipperSlug.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CD0C09341D09CE0A00E78C39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD0C09351D09CE0A00E78C39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD0C09371D09CE0A00E78C39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CD0C09381D09CE0A00E78C39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD0C09281D09CE0A00E78C39 /* Build configuration list for PBXProject "ZipperSlug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD0C09341D09CE0A00E78C39 /* Debug */,
+				CD0C09351D09CE0A00E78C39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD0C09361D09CE0A00E78C39 /* Build configuration list for PBXNativeTarget "ZipperSlug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD0C09371D09CE0A00E78C39 /* Debug */,
+				CD0C09381D09CE0A00E78C39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD0C09251D09CE0A00E78C39 /* Project object */;
+}
