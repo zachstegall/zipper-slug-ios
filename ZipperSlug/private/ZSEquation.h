@@ -1,5 +1,5 @@
 //
-//  ZipperSlug.h
+//  ZSEquation.h
 //  ZipperSlug
 //
 //  Created by Zachary Stegall on 6/9/16.
@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ZipperSlug : NSObject
+@interface ZSEquation : NSObject
+
+/**
+ 
+ 
+ @param
+ @param
+ @return
+*/
+NSInteger combinations(NSInteger groupSize, NSInteger arraySize);
 
 @end

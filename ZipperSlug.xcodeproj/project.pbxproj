@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD0C09311D09CE0A00E78C39 /* ZipperSlug.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD0C09301D09CE0A00E78C39 /* ZipperSlug.h */; };
-		CD0C09331D09CE0A00E78C39 /* ZipperSlug.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09321D09CE0A00E78C39 /* ZipperSlug.m */; };
+		CD0C09431D09D27600E78C39 /* ZSSort.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09421D09D27600E78C39 /* ZSSort.m */; };
+		CD0C09461D09D35700E78C39 /* ZSEquation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09451D09D35700E78C39 /* ZSEquation.m */; };
+		CD0C09531D0A1A6900E78C39 /* ZSCombination.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09521D0A1A6900E78C39 /* ZSCombination.m */; };
+		CD0C09561D0A1C9100E78C39 /* ZSConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09551D0A1C9100E78C39 /* ZSConversion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +20,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				CD0C09311D09CE0A00E78C39 /* ZipperSlug.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +27,14 @@
 
 /* Begin PBXFileReference section */
 		CD0C092D1D09CE0A00E78C39 /* libZipperSlug.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZipperSlug.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD0C09301D09CE0A00E78C39 /* ZipperSlug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZipperSlug.h; sourceTree = "<group>"; };
-		CD0C09321D09CE0A00E78C39 /* ZipperSlug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZipperSlug.m; sourceTree = "<group>"; };
+		CD0C09411D09D27600E78C39 /* ZSSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSSort.h; path = private/ZSSort.h; sourceTree = "<group>"; };
+		CD0C09421D09D27600E78C39 /* ZSSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSSort.m; path = private/ZSSort.m; sourceTree = "<group>"; };
+		CD0C09441D09D35700E78C39 /* ZSEquation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSEquation.h; path = private/ZSEquation.h; sourceTree = "<group>"; };
+		CD0C09451D09D35700E78C39 /* ZSEquation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSEquation.m; path = private/ZSEquation.m; sourceTree = "<group>"; };
+		CD0C09511D0A1A6900E78C39 /* ZSCombination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSCombination.h; sourceTree = "<group>"; };
+		CD0C09521D0A1A6900E78C39 /* ZSCombination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSCombination.m; sourceTree = "<group>"; };
+		CD0C09541D0A1C9100E78C39 /* ZSConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSConversion.h; path = private/ZSConversion.h; sourceTree = "<group>"; };
+		CD0C09551D0A1C9100E78C39 /* ZSConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSConversion.m; path = private/ZSConversion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +67,24 @@
 		CD0C092F1D09CE0A00E78C39 /* ZipperSlug */ = {
 			isa = PBXGroup;
 			children = (
-				CD0C09301D09CE0A00E78C39 /* ZipperSlug.h */,
-				CD0C09321D09CE0A00E78C39 /* ZipperSlug.m */,
+				CD0C09511D0A1A6900E78C39 /* ZSCombination.h */,
+				CD0C09521D0A1A6900E78C39 /* ZSCombination.m */,
+				CD0C093A1D09D1DB00E78C39 /* private */,
 			);
 			path = ZipperSlug;
+			sourceTree = "<group>";
+		};
+		CD0C093A1D09D1DB00E78C39 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				CD0C09441D09D35700E78C39 /* ZSEquation.h */,
+				CD0C09451D09D35700E78C39 /* ZSEquation.m */,
+				CD0C09411D09D27600E78C39 /* ZSSort.h */,
+				CD0C09421D09D27600E78C39 /* ZSSort.m */,
+				CD0C09541D0A1C9100E78C39 /* ZSConversion.h */,
+				CD0C09551D0A1C9100E78C39 /* ZSConversion.m */,
+			);
+			name = private;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD0C09331D09CE0A00E78C39 /* ZipperSlug.m in Sources */,
+				CD0C09561D0A1C9100E78C39 /* ZSConversion.m in Sources */,
+				CD0C09461D09D35700E78C39 /* ZSEquation.m in Sources */,
+				CD0C09431D09D27600E78C39 /* ZSSort.m in Sources */,
+				CD0C09531D0A1A6900E78C39 /* ZSCombination.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +272,7 @@
 				CD0C09381D09CE0A00E78C39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
