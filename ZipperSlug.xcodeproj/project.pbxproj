@@ -11,6 +11,7 @@
 		CD0C09461D09D35700E78C39 /* ZSEquation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09451D09D35700E78C39 /* ZSEquation.m */; };
 		CD0C09531D0A1A6900E78C39 /* ZSCombination.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09521D0A1A6900E78C39 /* ZSCombination.m */; };
 		CD0C09561D0A1C9100E78C39 /* ZSConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09551D0A1C9100E78C39 /* ZSConversion.m */; };
+		CD0C095B1D0B17CD00E78C39 /* ZSPermutation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C095A1D0B17CD00E78C39 /* ZSPermutation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,8 @@
 		CD0C09521D0A1A6900E78C39 /* ZSCombination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSCombination.m; sourceTree = "<group>"; };
 		CD0C09541D0A1C9100E78C39 /* ZSConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSConversion.h; path = private/ZSConversion.h; sourceTree = "<group>"; };
 		CD0C09551D0A1C9100E78C39 /* ZSConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSConversion.m; path = private/ZSConversion.m; sourceTree = "<group>"; };
+		CD0C09591D0B17CD00E78C39 /* ZSPermutation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSPermutation.h; sourceTree = "<group>"; };
+		CD0C095A1D0B17CD00E78C39 /* ZSPermutation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSPermutation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 			children = (
 				CD0C09511D0A1A6900E78C39 /* ZSCombination.h */,
 				CD0C09521D0A1A6900E78C39 /* ZSCombination.m */,
+				CD0C09591D0B17CD00E78C39 /* ZSPermutation.h */,
+				CD0C095A1D0B17CD00E78C39 /* ZSPermutation.m */,
 				CD0C093A1D09D1DB00E78C39 /* private */,
 			);
 			path = ZipperSlug;
@@ -143,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD0C095B1D0B17CD00E78C39 /* ZSPermutation.m in Sources */,
 				CD0C09561D0A1C9100E78C39 /* ZSConversion.m in Sources */,
 				CD0C09461D09D35700E78C39 /* ZSEquation.m in Sources */,
 				CD0C09431D09D27600E78C39 /* ZSSort.m in Sources */,

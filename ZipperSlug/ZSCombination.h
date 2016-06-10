@@ -28,13 +28,4 @@
  */
 +(NSInteger)totalCombinations:(NSInteger)valCount;
 
-/**
- 
- 
- @param ul number of unique letters
- @param gs size of each combination group of letters
- @return An array of NSString letter combinations
- */
-+(NSArray *)createLetterCombinations:(NSInteger)ul GroupSize:(NSInteger)gs;
-
 @end
