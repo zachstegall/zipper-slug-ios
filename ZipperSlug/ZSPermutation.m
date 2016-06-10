@@ -16,7 +16,7 @@
 #pragma mark - Create
 
 
-+(NSArray *)createLetterCombinations:(NSInteger)ul GroupSize:(NSInteger)gs
++(NSArray *)createLetterPermutations:(NSInteger)ul GroupSize:(NSInteger)gs
 {
     static NSUInteger first = 97;   // lowercase a
     static NSUInteger max = 25;     // a - z

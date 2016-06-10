@@ -14,9 +14,9 @@
  
  
  @param ul number of unique letters
- @param gs size of each combination group of letters
- @return An array of NSString letter combinations
+ @param gs size of each permutation group of letters
+ @return An array of NSString letter permutation
  */
-+(NSArray *)createLetterCombinations:(NSInteger)ul GroupSize:(NSInteger)gs;
++(NSArray *)createLetterPermutations:(NSInteger)ul GroupSize:(NSInteger)gs;
 
 @end
