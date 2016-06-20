@@ -55,26 +55,6 @@ NSInteger qs_Partition(NSMutableArray *q, NSInteger start, NSInteger end)
     
     swap(q, p, end);
     return p;
-    
-    
-    
-    /*
-    id pVal = q[end];
-    NSInteger i = start;
-    
-    for (NSInteger j = start; j <= end; j++)
-    {
-        ZSComparisonResult cr = compare(pVal, q[j]);
-        if (cr == ZSCR_GREATER_THAN)
-        {
-            swap(q, i, j);
-            i++;
-        }
-    }
-    
-    swap(q, i, end);
-    return i;
-    */
 }
 
 
