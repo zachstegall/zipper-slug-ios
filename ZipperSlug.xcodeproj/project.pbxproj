@@ -12,6 +12,9 @@
 		CD0C09531D0A1A6900E78C39 /* ZSCombination.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09521D0A1A6900E78C39 /* ZSCombination.m */; };
 		CD0C09561D0A1C9100E78C39 /* ZSConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09551D0A1C9100E78C39 /* ZSConversion.m */; };
 		CD0C095B1D0B17CD00E78C39 /* ZSPermutation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C095A1D0B17CD00E78C39 /* ZSPermutation.m */; };
+		CD0C095E1D0B214700E78C39 /* ZSSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C095D1D0B214700E78C39 /* ZSSearch.m */; };
+		CD0C09611D0B22D200E78C39 /* ZSCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09601D0B22D200E78C39 /* ZSCompare.m */; };
+		CD0C09691D17A34300E78C39 /* ZSProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09681D17A34300E78C39 /* ZSProblem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +41,13 @@
 		CD0C09551D0A1C9100E78C39 /* ZSConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSConversion.m; path = private/ZSConversion.m; sourceTree = "<group>"; };
 		CD0C09591D0B17CD00E78C39 /* ZSPermutation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSPermutation.h; sourceTree = "<group>"; };
 		CD0C095A1D0B17CD00E78C39 /* ZSPermutation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSPermutation.m; sourceTree = "<group>"; };
+		CD0C095C1D0B214700E78C39 /* ZSSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSSearch.h; path = private/ZSSearch.h; sourceTree = "<group>"; };
+		CD0C095D1D0B214700E78C39 /* ZSSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSSearch.m; path = private/ZSSearch.m; sourceTree = "<group>"; };
+		CD0C095F1D0B22D200E78C39 /* ZSCompare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSCompare.h; path = private/ZSCompare.h; sourceTree = "<group>"; };
+		CD0C09601D0B22D200E78C39 /* ZSCompare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSCompare.m; path = private/ZSCompare.m; sourceTree = "<group>"; };
+		CD0C09621D0B253C00E78C39 /* ZipperSlug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZipperSlug.h; sourceTree = "<group>"; };
+		CD0C09671D17A34300E78C39 /* ZSProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSProblem.h; sourceTree = "<group>"; };
+		CD0C09681D17A34300E78C39 /* ZSProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSProblem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +80,13 @@
 		CD0C092F1D09CE0A00E78C39 /* ZipperSlug */ = {
 			isa = PBXGroup;
 			children = (
+				CD0C09621D0B253C00E78C39 /* ZipperSlug.h */,
 				CD0C09511D0A1A6900E78C39 /* ZSCombination.h */,
 				CD0C09521D0A1A6900E78C39 /* ZSCombination.m */,
 				CD0C09591D0B17CD00E78C39 /* ZSPermutation.h */,
 				CD0C095A1D0B17CD00E78C39 /* ZSPermutation.m */,
+				CD0C09671D17A34300E78C39 /* ZSProblem.h */,
+				CD0C09681D17A34300E78C39 /* ZSProblem.m */,
 				CD0C093A1D09D1DB00E78C39 /* private */,
 			);
 			path = ZipperSlug;
@@ -82,10 +95,14 @@
 		CD0C093A1D09D1DB00E78C39 /* private */ = {
 			isa = PBXGroup;
 			children = (
+				CD0C095F1D0B22D200E78C39 /* ZSCompare.h */,
+				CD0C09601D0B22D200E78C39 /* ZSCompare.m */,
 				CD0C09441D09D35700E78C39 /* ZSEquation.h */,
 				CD0C09451D09D35700E78C39 /* ZSEquation.m */,
 				CD0C09411D09D27600E78C39 /* ZSSort.h */,
 				CD0C09421D09D27600E78C39 /* ZSSort.m */,
+				CD0C095C1D0B214700E78C39 /* ZSSearch.h */,
+				CD0C095D1D0B214700E78C39 /* ZSSearch.m */,
 				CD0C09541D0A1C9100E78C39 /* ZSConversion.h */,
 				CD0C09551D0A1C9100E78C39 /* ZSConversion.m */,
 			);
@@ -150,6 +167,9 @@
 			files = (
 				CD0C095B1D0B17CD00E78C39 /* ZSPermutation.m in Sources */,
 				CD0C09561D0A1C9100E78C39 /* ZSConversion.m in Sources */,
+				CD0C09611D0B22D200E78C39 /* ZSCompare.m in Sources */,
+				CD0C095E1D0B214700E78C39 /* ZSSearch.m in Sources */,
+				CD0C09691D17A34300E78C39 /* ZSProblem.m in Sources */,
 				CD0C09461D09D35700E78C39 /* ZSEquation.m in Sources */,
 				CD0C09431D09D27600E78C39 /* ZSSort.m in Sources */,
 				CD0C09531D0A1A6900E78C39 /* ZSCombination.m in Sources */,

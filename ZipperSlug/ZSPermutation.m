@@ -8,6 +8,7 @@
 
 #import "ZSPermutation.h"
 #import "ZSConversion.h"
+#import "ZSCompare.h"
 
 
 @implementation ZSPermutation
@@ -119,6 +120,43 @@ void updatePointers(NSMutableArray *pointers, NSInteger highestIndex)
         i--;
     }
 }
+
+
+
+#pragma mark - Get
+
+
++(NSArray *)getAllPermutations:(NSString *)letters
+{
+    return nil;
+    /*
+    NSMutableArray *lArray = letterArrayFromString(letters);
+    for (NSInteger i = 0; i < [lArray count]; i++)
+    {
+        swap(lArray, i, [lArray count]-1);
+        id pivot = lArray[i];
+        
+        
+    }
+    */
+}
+
+
+
+#pragma mark - Get Helpers
+
+
+NSMutableArray *letterArrayFromString(NSString *letters)
+{
+    NSMutableArray *lArray = [NSMutableArray array];
+    for (NSInteger i = 0; i < letters.length; i++)
+    {
+        [lArray addObject:[letters substringWithRange:NSMakeRange(i, 1)]];
+    }
+    
+    return lArray;
+}
+
 
 
 @end
