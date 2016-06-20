@@ -70,7 +70,7 @@ void mergeSort(NSMutableArray *m, NSInteger start, NSInteger end)
         end < 0 || end >= [m count])
         return;
     
-    NSInteger pIndex = start + floorf((end - start) / 2);
+    NSInteger pIndex = floor((start + end) / 2);
     mergeSort(m, start, pIndex);
     mergeSort(m, pIndex + 1, end);
     ms_Merge(m, start, pIndex, end);
