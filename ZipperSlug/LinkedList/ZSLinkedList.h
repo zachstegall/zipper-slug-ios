@@ -19,4 +19,6 @@
 -(void)insertElement:(nonnull id)value afterValue:(nonnull id)aValue;
 -(void)insertElement:(nonnull id)value beforeValue:(nonnull id)bValue;
 
+-(void)reverse;
+
 @end

@@ -98,6 +98,29 @@
 }
 
 
+-(void)reverse
+{
+    if (self.head == nil || [self.head isEqual:self.tail])
+        return;
+    
+    ZSNode *t1 = self.head;
+    ZSNode *t2 = t1.next;
+    self.head.next = nil;
+    self.tail = self.head;
+    
+    while (t2 != nil)
+    {
+        ZSNode *t3 = t2.next;
+        t2.next = t1;
+        
+        t1 = t2;
+        t2 = t3;
+    }
+    
+    self.head = t1;
+}
+
+
 
 #pragma mark - Operations (private)
 
