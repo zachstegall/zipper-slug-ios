@@ -1,5 +1,5 @@
 //
-//  ZSStack.m
+//  ZSStackLinkedList.h
 //  ZipperSlug
 //
 //  Created by Zachary Stegall on 6/20/16.
@@ -8,6 +8,6 @@
 
 #import "ZSStack.h"
 
-@implementation ZSStack
+@interface ZSStackLinkedList : ZSStack<ZSStackProtocol>
 
 @end

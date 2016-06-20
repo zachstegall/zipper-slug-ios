@@ -8,6 +8,12 @@
 
 #import "ZSLinkedList.h"
 
+
+@interface ZSLinkedList()
+@property (readwrite) NSUInteger count;
+@end
+
+
 @implementation ZSLinkedList
 
 
@@ -17,6 +23,7 @@
     {
         self.head = nil;
         self.tail = nil;
+        self.count = 0;
     }
     
     return self;
@@ -34,6 +41,7 @@
     
     self.head = n;
     self.tail = n;
+    self.count = 1;
 }
 
 
@@ -54,6 +62,7 @@
     else
     {
         [self updateTail:n];
+        [self incrementCount];
     }
 }
 
@@ -71,6 +80,7 @@
     else
     {
         [self updateHead:n];
+        [self incrementCount];
     }
 }
 
@@ -82,7 +92,10 @@
     
     ZSNode *c = [self nodeForElement:aValue];
     if (c != nil)
+    {
         [self insertElement:value afterNode:c];
+        [self incrementCount];
+    }
 }
 
 
@@ -94,7 +107,59 @@
     ZSNode *p = nil;
     ZSNode *c = [self nodeForElement:bValue previousNode:&p];
     if (c != nil)
+    {
         [self insertElement:value beforeNode:c afterNode:p];
+        [self incrementCount];
+    }
+}
+
+
+-(void)removeHead
+{
+    if (self.head == nil)
+        return;
+    
+    if (self.count == 1)
+    {
+        self.head = nil;
+        self.tail = nil;
+    }
+    else
+    {
+        id t = self.head.next;
+        self.head = nil;
+        self.head = t;
+    }
+    
+    [self decrementCount];
+}
+
+
+-(void)removeTail
+{
+    if (self.head == nil || self.tail == nil)
+        return;
+    
+    if (self.count == 1)
+    {
+        self.head = nil;
+        self.tail = nil;
+    }
+    else
+    {
+        ZSNode *p = nil;
+        ZSNode *n = [self nodeForElement:self.tail.value previousNode:&p];
+        if (p != nil && n != nil)
+        {
+            p.next = nil;
+            n = nil;
+        }
+        
+        self.tail = nil;
+        [self setEndAsTail];
+    }
+    
+    [self decrementCount];
 }
 
 
@@ -191,6 +256,38 @@
     {
         aNode.next = n;
     }
+}
+
+
+-(void)setEndAsTail
+{
+    if (self.head == nil)
+        return;
+    
+    ZSNode *c = self.head;
+    while (c.next != nil)
+    {
+        c = c.next;
+    }
+    
+    self.tail = c;
+}
+
+
+
+#pragma mark - Counter
+
+
+-(void)incrementCount
+{
+    self.count++;
+}
+
+
+-(void)decrementCount
+{
+    if (self.count > 0)
+        self.count--;
 }
 
 

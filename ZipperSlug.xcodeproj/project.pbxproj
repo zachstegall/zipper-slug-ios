@@ -15,9 +15,11 @@
 		CD0C095E1D0B214700E78C39 /* ZSSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C095D1D0B214700E78C39 /* ZSSearch.m */; };
 		CD0C09611D0B22D200E78C39 /* ZSCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09601D0B22D200E78C39 /* ZSCompare.m */; };
 		CD0C09691D17A34300E78C39 /* ZSProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09681D17A34300E78C39 /* ZSProblem.m */; };
-		CD0C096E1D17B9FF00E78C39 /* ZSNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C096D1D17B9FF00E78C39 /* ZSNode.m */; };
-		CD0C09711D17BAA400E78C39 /* ZSLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09701D17BAA400E78C39 /* ZSLinkedList.m */; };
-		CD0C097A1D17D09700E78C39 /* ZSStack.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09791D17D09700E78C39 /* ZSStack.m */; };
+		CD0C09801D184AA000E78C39 /* ZSLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C097D1D184AA000E78C39 /* ZSLinkedList.m */; };
+		CD0C09811D184AA000E78C39 /* ZSNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C097F1D184AA000E78C39 /* ZSNode.m */; };
+		CD0C09841D184AAD00E78C39 /* ZSStack.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09831D184AAD00E78C39 /* ZSStack.m */; };
+		CD0C09871D184C9400E78C39 /* ZSStackArray.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09861D184C9400E78C39 /* ZSStackArray.m */; };
+		CD0C098A1D184CA100E78C39 /* ZSStackLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09891D184CA100E78C39 /* ZSStackLinkedList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,12 +53,17 @@
 		CD0C09621D0B253C00E78C39 /* ZipperSlug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZipperSlug.h; sourceTree = "<group>"; };
 		CD0C09671D17A34300E78C39 /* ZSProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSProblem.h; sourceTree = "<group>"; };
 		CD0C09681D17A34300E78C39 /* ZSProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSProblem.m; sourceTree = "<group>"; };
-		CD0C096C1D17B9FF00E78C39 /* ZSNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSNode.h; path = LinkedList/ZSNode.h; sourceTree = "<group>"; };
-		CD0C096D1D17B9FF00E78C39 /* ZSNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSNode.m; path = LinkedList/ZSNode.m; sourceTree = "<group>"; };
-		CD0C096F1D17BAA400E78C39 /* ZSLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSLinkedList.h; path = LinkedList/ZSLinkedList.h; sourceTree = "<group>"; };
-		CD0C09701D17BAA400E78C39 /* ZSLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSLinkedList.m; path = LinkedList/ZSLinkedList.m; sourceTree = "<group>"; };
-		CD0C09781D17D09700E78C39 /* ZSStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSStack.h; path = Stack/ZSStack.h; sourceTree = "<group>"; };
-		CD0C09791D17D09700E78C39 /* ZSStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSStack.m; path = Stack/ZSStack.m; sourceTree = "<group>"; };
+		CD0C097C1D184AA000E78C39 /* ZSLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSLinkedList.h; path = DataStructures/LinkedList/ZSLinkedList.h; sourceTree = "<group>"; };
+		CD0C097D1D184AA000E78C39 /* ZSLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSLinkedList.m; path = DataStructures/LinkedList/ZSLinkedList.m; sourceTree = "<group>"; };
+		CD0C097E1D184AA000E78C39 /* ZSNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSNode.h; path = DataStructures/LinkedList/ZSNode.h; sourceTree = "<group>"; };
+		CD0C097F1D184AA000E78C39 /* ZSNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSNode.m; path = DataStructures/LinkedList/ZSNode.m; sourceTree = "<group>"; };
+		CD0C09821D184AAD00E78C39 /* ZSStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSStack.h; path = DataStructures/Stack/ZSStack.h; sourceTree = "<group>"; };
+		CD0C09831D184AAD00E78C39 /* ZSStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSStack.m; path = DataStructures/Stack/ZSStack.m; sourceTree = "<group>"; };
+		CD0C09851D184C9400E78C39 /* ZSStackArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSStackArray.h; path = DataStructures/Stack/ZSStackArray.h; sourceTree = "<group>"; };
+		CD0C09861D184C9400E78C39 /* ZSStackArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSStackArray.m; path = DataStructures/Stack/ZSStackArray.m; sourceTree = "<group>"; };
+		CD0C09881D184CA100E78C39 /* ZSStackLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSStackLinkedList.h; path = DataStructures/Stack/ZSStackLinkedList.h; sourceTree = "<group>"; };
+		CD0C09891D184CA100E78C39 /* ZSStackLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSStackLinkedList.m; path = DataStructures/Stack/ZSStackLinkedList.m; sourceTree = "<group>"; };
+		CD0C098B1D18549000E78C39 /* ZSDataStructures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZSDataStructures.h; path = DataStructures/ZSDataStructures.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +104,7 @@
 				CD0C09671D17A34300E78C39 /* ZSProblem.h */,
 				CD0C09681D17A34300E78C39 /* ZSProblem.m */,
 				CD0C093A1D09D1DB00E78C39 /* private */,
-				CD0C096B1D17AE5800E78C39 /* LinkedList */,
-				CD0C09771D17D07900E78C39 /* Stack */,
+				CD0C097B1D184A7600E78C39 /* DataStructures */,
 			);
 			path = ZipperSlug;
 			sourceTree = "<group>";
@@ -123,10 +129,10 @@
 		CD0C096B1D17AE5800E78C39 /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
-				CD0C096F1D17BAA400E78C39 /* ZSLinkedList.h */,
-				CD0C09701D17BAA400E78C39 /* ZSLinkedList.m */,
-				CD0C096C1D17B9FF00E78C39 /* ZSNode.h */,
-				CD0C096D1D17B9FF00E78C39 /* ZSNode.m */,
+				CD0C097C1D184AA000E78C39 /* ZSLinkedList.h */,
+				CD0C097D1D184AA000E78C39 /* ZSLinkedList.m */,
+				CD0C097E1D184AA000E78C39 /* ZSNode.h */,
+				CD0C097F1D184AA000E78C39 /* ZSNode.m */,
 			);
 			name = LinkedList;
 			sourceTree = "<group>";
@@ -134,10 +140,24 @@
 		CD0C09771D17D07900E78C39 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
-				CD0C09781D17D09700E78C39 /* ZSStack.h */,
-				CD0C09791D17D09700E78C39 /* ZSStack.m */,
+				CD0C09821D184AAD00E78C39 /* ZSStack.h */,
+				CD0C09831D184AAD00E78C39 /* ZSStack.m */,
+				CD0C09851D184C9400E78C39 /* ZSStackArray.h */,
+				CD0C09861D184C9400E78C39 /* ZSStackArray.m */,
+				CD0C09881D184CA100E78C39 /* ZSStackLinkedList.h */,
+				CD0C09891D184CA100E78C39 /* ZSStackLinkedList.m */,
 			);
 			name = Stack;
+			sourceTree = "<group>";
+		};
+		CD0C097B1D184A7600E78C39 /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				CD0C098B1D18549000E78C39 /* ZSDataStructures.h */,
+				CD0C096B1D17AE5800E78C39 /* LinkedList */,
+				CD0C09771D17D07900E78C39 /* Stack */,
+			);
+			name = DataStructures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,16 +216,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD0C098A1D184CA100E78C39 /* ZSStackLinkedList.m in Sources */,
 				CD0C095B1D0B17CD00E78C39 /* ZSPermutation.m in Sources */,
 				CD0C09561D0A1C9100E78C39 /* ZSConversion.m in Sources */,
 				CD0C09611D0B22D200E78C39 /* ZSCompare.m in Sources */,
+				CD0C09841D184AAD00E78C39 /* ZSStack.m in Sources */,
 				CD0C095E1D0B214700E78C39 /* ZSSearch.m in Sources */,
-				CD0C097A1D17D09700E78C39 /* ZSStack.m in Sources */,
+				CD0C09801D184AA000E78C39 /* ZSLinkedList.m in Sources */,
 				CD0C09691D17A34300E78C39 /* ZSProblem.m in Sources */,
+				CD0C09871D184C9400E78C39 /* ZSStackArray.m in Sources */,
 				CD0C09461D09D35700E78C39 /* ZSEquation.m in Sources */,
 				CD0C09431D09D27600E78C39 /* ZSSort.m in Sources */,
-				CD0C09711D17BAA400E78C39 /* ZSLinkedList.m in Sources */,
-				CD0C096E1D17B9FF00E78C39 /* ZSNode.m in Sources */,
+				CD0C09811D184AA000E78C39 /* ZSNode.m in Sources */,
 				CD0C09531D0A1A6900E78C39 /* ZSCombination.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
