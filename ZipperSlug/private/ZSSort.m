@@ -41,12 +41,30 @@ NSInteger qs_Partition(NSMutableArray *q, NSInteger start, NSInteger end)
 {
     // quickSort(q, s, e) has the safety checks
     //
+    NSInteger p = start;
+    for (NSInteger i = start; i < end; i++)
+    {
+        ZSComparisonResult cr = compare(q[i], q[end]);
+        if (cr == ZSCR_LESS_THAN ||
+            cr == ZSCR_EQUAL_TO)
+        {
+            swap(q, p, i);
+            p++;
+        }
+    }
+    
+    swap(q, p, end);
+    return p;
+    
+    
+    
+    /*
     id pVal = q[end];
     NSInteger i = start;
     
     for (NSInteger j = start; j <= end; j++)
     {
-        enum ZSComparisonResult cr = compare(pVal, q[j]);
+        ZSComparisonResult cr = compare(pVal, q[j]);
         if (cr == ZSCR_GREATER_THAN)
         {
             swap(q, i, j);
@@ -56,6 +74,7 @@ NSInteger qs_Partition(NSMutableArray *q, NSInteger start, NSInteger end)
     
     swap(q, i, end);
     return i;
+    */
 }
 
 
@@ -111,7 +130,7 @@ void ms_Merge(NSMutableArray *m, NSInteger start, NSInteger pivot, NSInteger end
         }
         else
         {
-            enum ZSComparisonResult lr = compare(l[j], r[k]);
+            ZSComparisonResult lr = compare(l[j], r[k]);
             if (lr == ZSCR_LESS_THAN)
             {
                 m[o] = l[j];

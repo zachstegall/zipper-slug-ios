@@ -31,7 +31,7 @@ void swap(NSMutableArray *a, NSInteger i1, NSInteger i2)
 }
 
 
-enum ZSComparisonResult compare(id i1, id i2)
+ZSComparisonResult compare(id i1, id i2)
 {
     if ([i1 isKindOfClass:[NSNumber class]])
     {
@@ -83,7 +83,7 @@ enum ZSComparisonResult compare(id i1, id i2)
 }
 
 
-enum ZSComparisonResult convertComparison(NSComparisonResult r)
+ZSComparisonResult convertComparison(NSComparisonResult r)
 {
     switch (r)
     {

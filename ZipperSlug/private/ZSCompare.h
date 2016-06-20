@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-NS_OPTIONS (NSUInteger, ZSComparisonResult)
+typedef NS_OPTIONS (NSUInteger, ZSComparisonResult)
 {
     ZSCR_INVALID        = 0,
     ZSCR_EQUAL_TO       = 1,
@@ -36,6 +36,6 @@ void swap(NSMutableArray *a, NSInteger i1, NSInteger i2);
  @param
  @return
 */
-enum ZSComparisonResult compare(id i1, id i2);
+ZSComparisonResult compare(id i1, id i2);
 
 @end

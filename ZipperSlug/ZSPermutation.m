@@ -8,7 +8,6 @@
 
 #import "ZSPermutation.h"
 #import "ZSConversion.h"
-#import "ZSCompare.h"
 
 
 @implementation ZSPermutation
