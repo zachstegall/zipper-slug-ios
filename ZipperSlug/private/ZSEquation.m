@@ -11,6 +11,15 @@
 @implementation ZSEquation
 
 
+NSUInteger factorial(NSUInteger num)
+{
+    if (num == 0)
+        return 1;
+    
+    return num * factorial(num - 1);
+}
+
+
 NSInteger combinations(NSInteger groupSize, NSInteger arraySize)
 {
     //      a!
@@ -18,32 +27,6 @@ NSInteger combinations(NSInteger groupSize, NSInteger arraySize)
     // g! * (a - g)!
     //
     return ((factorial(arraySize)) / (factorial(groupSize) * factorial(arraySize - groupSize)));
-}
-
-
-
-#pragma mark - Helpers
-
-
-/**
- 
- 
- @param
- @param
- @return
-*/
-NSInteger factorial(NSInteger f)
-{
-    if (f == 0)
-        return 1;
-    
-    NSInteger x = f;
-    for (NSInteger i = (f - 1); i > 0; i--)
-    {
-        x *= i;
-    }
-    
-    return x;
 }
 
 

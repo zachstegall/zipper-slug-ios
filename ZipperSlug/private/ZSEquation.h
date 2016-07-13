@@ -17,6 +17,15 @@
  @param
  @return
 */
+NSUInteger factorial(NSUInteger num);
+
+/**
+ 
+ 
+ @param
+ @param
+ @return
+*/
 NSInteger combinations(NSInteger groupSize, NSInteger arraySize);
 
 @end

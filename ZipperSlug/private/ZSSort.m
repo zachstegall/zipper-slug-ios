@@ -13,6 +13,39 @@
 @implementation ZSSort
 
 
+void selectionSort(NSMutableArray *q, NSInteger count)
+{
+    for (NSInteger i = 0; i < count; i++)
+    {
+        NSUInteger smallest = i;
+        for (NSInteger j = i + 1; j < count; j++)
+        {
+            ZSComparisonResult cr = compare(q[j], q[smallest]);
+            if (cr == ZSCR_LESS_THAN)
+                smallest = j;
+        }
+        swap(q, i, smallest);
+    }
+}
+
+
+void insertionSort(NSMutableArray *q, NSInteger count)
+{
+    for (NSInteger i = 1; i < count; i++)
+    {
+        id key = q[i];
+        NSInteger j = i - 1;
+        while (j >= 0 && compare(q[j], key) == ZSCR_GREATER_THAN)
+        {
+            q[j+1] = q[j];
+            j--;
+        }
+        
+        q[j+1] = key;
+    }
+}
+
+
 #pragma mark - Quick Sort
 
 
@@ -124,6 +157,7 @@ void ms_Merge(NSMutableArray *m, NSInteger start, NSInteger pivot, NSInteger end
         }
     }
 }
+
 
 
 @end

@@ -8,6 +8,7 @@
 
 #import "ZSPermutation.h"
 #import "ZSConversion.h"
+#import "ZSCompare.h"
 
 
 @implementation ZSPermutation
@@ -127,22 +128,94 @@ void updatePointers(NSMutableArray *pointers, NSInteger highestIndex)
 
 +(NSArray *)getAllPermutations:(NSString *)letters
 {
-    return nil;
-    /*
-    NSMutableArray *lArray = letterArrayFromString(letters);
-    for (NSInteger i = 0; i < [lArray count]; i++)
+    NSMutableString *lettersMutable = [letters mutableCopy];
+    NSMutableArray *allPermutations = [NSMutableArray array];
+    for (NSInteger i = 0; i < lettersMutable.length; i++)
     {
-        swap(lArray, i, [lArray count]-1);
-        id pivot = lArray[i];
+        if (lettersMutable.length > 3)
+        {
+            NSRange r = NSMakeRange(1, (lettersMutable.length - 1));
+            NSArray *pLessThan = [self getAllPermutations:[lettersMutable substringWithRange:r]];
+            
+            NSRange r1 = NSMakeRange(0, 1);
+            NSArray *pFC = fillCombos([lettersMutable substringWithRange:r1], pLessThan);
+            [allPermutations addObjectsFromArray:pFC];
+        }
+        else
+        {
+            NSMutableArray *lArray = letterArrayFromString(lettersMutable);
+            [allPermutations addObjectsFromArray:getCombos(lArray)];
+        }
         
-        
+        rotateString(lettersMutable);
     }
-    */
+    
+    return allPermutations;
 }
 
 
 
 #pragma mark - Get Helpers
+
+
+NSArray *getCombos(NSMutableArray *letters)
+{
+    NSMutableArray *c = [NSMutableArray array];
+    
+    if ([letters count] < 2)
+    {
+        return letters;
+    }
+    else if ([letters count] == 2)
+    {
+        [c addObject:letters];
+        NSMutableArray *lettersCopy = [letters mutableCopy];
+        swap(lettersCopy, 0, 1);
+        [c addObject:lettersCopy];
+    }
+    else // [letters count] > 2
+    {
+        NSRange r = NSMakeRange(1, ([letters count] - 1));
+        NSArray *mc = getCombos([[letters subarrayWithRange:r] mutableCopy]);
+        NSArray *fc = fillCombos(letters[0], mc);
+        [c addObjectsFromArray:fc];
+    }
+    
+    return c;
+}
+
+
+NSArray *fillCombos(id value1, NSArray *subArray)
+{
+    NSMutableArray *f = [NSMutableArray array];
+    
+    for (NSArray *a in subArray)
+    {
+        NSMutableArray *m = [NSMutableArray array];
+        [m addObject:value1];
+        [m addObjectsFromArray:a];
+        
+        [f addObject:m];
+    }
+    
+    return f;
+}
+
+
+void rotate(NSMutableArray *letters)
+{
+    id t = letters[0];
+    [letters removeObjectAtIndex:0];
+    [letters addObject:t];
+}
+
+
+void rotateString(NSMutableString *letters)
+{
+    NSString *a = [letters substringWithRange:NSMakeRange(0, 1)];
+    [letters replaceCharactersInRange:NSMakeRange(0, 1) withString:@""];
+    [letters appendString:a];
+}
 
 
 NSMutableArray *letterArrayFromString(NSString *letters)

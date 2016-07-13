@@ -17,6 +17,24 @@
  @param <#param 2#>
  @return <#returns#>
 */
+void selectionSort(NSMutableArray *q, NSInteger count);
+
+/**
+ <#description#>
+ 
+ @param <#param 1#>
+ @param <#param 2#>
+ @return <#returns#>
+*/
+void insertionSort(NSMutableArray *q, NSInteger count);
+
+/**
+ <#description#>
+ 
+ @param <#param 1#>
+ @param <#param 2#>
+ @return <#returns#>
+*/
 void quickSort(NSMutableArray *q, NSInteger start, NSInteger end);
 
 /**
@@ -25,7 +43,7 @@ void quickSort(NSMutableArray *q, NSInteger start, NSInteger end);
  @param <#param 1#>
  @param <#param 2#>
  @return <#returns#>
- */
+*/
 void mergeSort(NSMutableArray *m, NSInteger start, NSInteger end);
 
 @end
