@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZSNode.h"
+#import "ZSLLNode.h"
 
 @interface ZSLinkedList : NSObject
 
-@property (nullable) ZSNode *head;
-@property (nullable) ZSNode *tail;
+@property (nullable) ZSLLNode *head;
+@property (nullable) ZSLLNode *tail;
 @property (readonly) NSUInteger count;
 
 -(void)addElement:(nonnull id)value;

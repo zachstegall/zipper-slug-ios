@@ -46,7 +46,7 @@
     if (self.linkedList.count == 0)
         return nil;
     
-    ZSNode *tailNode = self.linkedList.tail;
+    ZSLLNode *tailNode = self.linkedList.tail;
     [self.linkedList removeTail];
     return tailNode.value;
 }

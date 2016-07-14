@@ -34,7 +34,7 @@
 #pragma mark - Setup
 
 
--(void)initNodes:(nonnull ZSNode *)n
+-(void)initNodes:(nonnull ZSLLNode *)n
 {
     if (n == nil)
         return;
@@ -54,7 +54,7 @@
     if (value == nil)
         return;
     
-    ZSNode *n = [[ZSNode alloc] initWithValue:value];
+    ZSLLNode *n = [[ZSLLNode alloc] initWithValue:value];
     if (self.head == nil)
     {
         [self initNodes:n];
@@ -72,7 +72,7 @@
     if (value == nil)
         return;
     
-    ZSNode *n = [[ZSNode alloc] initWithValue:value];
+    ZSLLNode *n = [[ZSLLNode alloc] initWithValue:value];
     if (self.head == nil)
     {
         [self initNodes:n];
@@ -90,7 +90,7 @@
     if (value == nil || aValue == nil || self.head == nil)
         return;
     
-    ZSNode *c = [self nodeForElement:aValue];
+    ZSLLNode *c = [self nodeForElement:aValue];
     if (c != nil)
     {
         [self insertElement:value afterNode:c];
@@ -104,8 +104,8 @@
     if (value == nil || bValue == nil || self.head == nil)
         return;
     
-    ZSNode *p = nil;
-    ZSNode *c = [self nodeForElement:bValue previousNode:&p];
+    ZSLLNode *p = nil;
+    ZSLLNode *c = [self nodeForElement:bValue previousNode:&p];
     if (c != nil)
     {
         [self insertElement:value beforeNode:c afterNode:p];
@@ -147,8 +147,8 @@
     }
     else
     {
-        ZSNode *p = nil;
-        ZSNode *n = [self nodeForElement:self.tail.value previousNode:&p];
+        ZSLLNode *p = nil;
+        ZSLLNode *n = [self nodeForElement:self.tail.value previousNode:&p];
         if (p != nil && n != nil)
         {
             p.next = nil;
@@ -168,14 +168,14 @@
     if (self.head == nil || [self.head isEqual:self.tail])
         return;
     
-    ZSNode *t1 = self.head;
-    ZSNode *t2 = t1.next;
+    ZSLLNode *t1 = self.head;
+    ZSLLNode *t2 = t1.next;
     self.head.next = nil;
     self.tail = self.head;
     
     while (t2 != nil)
     {
-        ZSNode *t3 = t2.next;
+        ZSLLNode *t3 = t2.next;
         t2.next = t1;
         
         t1 = t2;
@@ -190,7 +190,7 @@
 #pragma mark - Operations (private)
 
 
--(void)updateTail:(ZSNode *)n
+-(void)updateTail:(ZSLLNode *)n
 {
     if (n == nil)
         return;
@@ -207,7 +207,7 @@
 }
 
 
--(void)updateHead:(ZSNode *)n
+-(void)updateHead:(ZSLLNode *)n
 {
     if (n == nil)
         return;
@@ -224,12 +224,12 @@
 }
 
 
--(void)insertElement:(nonnull id)value afterNode:(nonnull ZSNode *)aNode
+-(void)insertElement:(nonnull id)value afterNode:(nonnull ZSLLNode *)aNode
 {
     if (value == nil || aNode == nil)
         return;
     
-    ZSNode *n = [[ZSNode alloc] initWithValue:value];
+    ZSLLNode *n = [[ZSLLNode alloc] initWithValue:value];
     n.next = aNode.next;
     aNode.next = n;
     
@@ -240,12 +240,12 @@
 }
 
 
--(void)insertElement:(nonnull id)value beforeNode:(nonnull ZSNode *)bNode afterNode:(nullable ZSNode *)aNode
+-(void)insertElement:(nonnull id)value beforeNode:(nonnull ZSLLNode *)bNode afterNode:(nullable ZSLLNode *)aNode
 {
     if (value == nil || bNode == nil)
         return;
     
-    ZSNode *n = [[ZSNode alloc] initWithValue:value];
+    ZSLLNode *n = [[ZSLLNode alloc] initWithValue:value];
     n.next = bNode;
     
     if (bNode == self.head)
@@ -264,7 +264,7 @@
     if (self.head == nil)
         return;
     
-    ZSNode *c = self.head;
+    ZSLLNode *c = self.head;
     while (c.next != nil)
     {
         c = c.next;
@@ -295,18 +295,18 @@
 #pragma mark - Operation Helpers
 
 
--(nullable ZSNode *)nodeForElement:(nonnull id)value
+-(nullable ZSLLNode *)nodeForElement:(nonnull id)value
 {
     return [self nodeForElement:value previousNode:nil];
 }
 
 
--(nullable ZSNode *)nodeForElement:(nonnull id)value previousNode:(ZSNode **)p
+-(nullable ZSLLNode *)nodeForElement:(nonnull id)value previousNode:(ZSLLNode **)p
 {
     if (value == nil)
         return nil;
     
-    ZSNode *c = self.head;
+    ZSLLNode *c = self.head;
     while (![c.value isEqual:value])
     {
         if (c.next == nil)
