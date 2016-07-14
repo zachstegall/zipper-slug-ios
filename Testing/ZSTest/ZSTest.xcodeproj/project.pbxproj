@@ -33,17 +33,17 @@
 		CDC92DF61D37E94F00DA7A4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CDC92E031D37E94F00DA7A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDC92E171D37ECE900DA7A4F /* libZipperSlug.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libZipperSlug.a; sourceTree = "<group>"; };
-		CDC92E1A1D37ED0F00DA7A4F /* ZipperSlugAlgorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZipperSlugAlgorithms.h; path = zs_algo/ZipperSlugAlgorithms.h; sourceTree = SOURCE_ROOT; };
-		CDC92E1B1D37ED0F00DA7A4F /* ZSCompare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZSCompare.h; path = zs_algo/ZSCompare.h; sourceTree = SOURCE_ROOT; };
-		CDC92E1C1D37ED0F00DA7A4F /* ZSConversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZSConversion.h; path = zs_algo/ZSConversion.h; sourceTree = SOURCE_ROOT; };
-		CDC92E1D1D37ED0F00DA7A4F /* ZSEquation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZSEquation.h; path = zs_algo/ZSEquation.h; sourceTree = SOURCE_ROOT; };
-		CDC92E1E1D37ED0F00DA7A4F /* ZSSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZSSearch.h; path = zs_algo/ZSSearch.h; sourceTree = SOURCE_ROOT; };
-		CDC92E1F1D37ED0F00DA7A4F /* ZSSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZSSort.h; path = zs_algo/ZSSort.h; sourceTree = SOURCE_ROOT; };
 		CDC92E241D37ED2A00DA7A4F /* Functional.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Functional.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC92E261D37ED2A00DA7A4F /* Functional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Functional.m; sourceTree = "<group>"; };
 		CDC92E281D37ED2A00DA7A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDC92E2F1D37FBC800DA7A4F /* Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sort.m; sourceTree = "<group>"; };
 		CDC92E311D37FD0A00DA7A4F /* Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Search.m; sourceTree = "<group>"; };
+		CDC92E331D38056900DA7A4F /* ZipperSlugAlgorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZipperSlugAlgorithms.h; path = algo_Headers/ZipperSlugAlgorithms.h; sourceTree = SOURCE_ROOT; };
+		CDC92E341D38056900DA7A4F /* ZSCompare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZSCompare.h; path = algo_Headers/ZSCompare.h; sourceTree = SOURCE_ROOT; };
+		CDC92E351D38056900DA7A4F /* ZSConversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZSConversion.h; path = algo_Headers/ZSConversion.h; sourceTree = SOURCE_ROOT; };
+		CDC92E361D38056900DA7A4F /* ZSEquation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZSEquation.h; path = algo_Headers/ZSEquation.h; sourceTree = SOURCE_ROOT; };
+		CDC92E371D38056900DA7A4F /* ZSSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZSSearch.h; path = algo_Headers/ZSSearch.h; sourceTree = SOURCE_ROOT; };
+		CDC92E381D38056900DA7A4F /* ZSSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZSSort.h; path = algo_Headers/ZSSort.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 				CDC92DF51D37E94F00DA7A4F /* AppDelegate.h */,
 				CDC92DF61D37E94F00DA7A4F /* AppDelegate.m */,
 				CDC92E031D37E94F00DA7A4F /* Info.plist */,
-				CDC92E191D37ED0300DA7A4F /* zs_algo */,
+				CDC92E191D37ED0300DA7A4F /* algo_Headers */,
 				CDC92DF21D37E94F00DA7A4F /* Supporting Files */,
 			);
 			path = ZSTest;
@@ -105,17 +105,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CDC92E191D37ED0300DA7A4F /* zs_algo */ = {
+		CDC92E191D37ED0300DA7A4F /* algo_Headers */ = {
 			isa = PBXGroup;
 			children = (
-				CDC92E1A1D37ED0F00DA7A4F /* ZipperSlugAlgorithms.h */,
-				CDC92E1B1D37ED0F00DA7A4F /* ZSCompare.h */,
-				CDC92E1C1D37ED0F00DA7A4F /* ZSConversion.h */,
-				CDC92E1D1D37ED0F00DA7A4F /* ZSEquation.h */,
-				CDC92E1E1D37ED0F00DA7A4F /* ZSSearch.h */,
-				CDC92E1F1D37ED0F00DA7A4F /* ZSSort.h */,
+				CDC92E331D38056900DA7A4F /* ZipperSlugAlgorithms.h */,
+				CDC92E341D38056900DA7A4F /* ZSCompare.h */,
+				CDC92E351D38056900DA7A4F /* ZSConversion.h */,
+				CDC92E361D38056900DA7A4F /* ZSEquation.h */,
+				CDC92E371D38056900DA7A4F /* ZSSearch.h */,
+				CDC92E381D38056900DA7A4F /* ZSSort.h */,
 			);
-			name = zs_algo;
+			name = algo_Headers;
 			sourceTree = "<group>";
 		};
 		CDC92E251D37ED2A00DA7A4F /* Functional */ = {
@@ -415,6 +415,7 @@
 				CDC92E131D37E94F00DA7A4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDC92E2B1D37ED2A00DA7A4F /* Build configuration list for PBXNativeTarget "Functional" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +424,7 @@
 				CDC92E2D1D37ED2A00DA7A4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

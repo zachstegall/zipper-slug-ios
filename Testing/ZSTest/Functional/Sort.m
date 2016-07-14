@@ -19,6 +19,9 @@
 @end
 
 
+static NSUInteger arraySize = 10000;
+
+
 @implementation Sort
 
 
@@ -28,10 +31,9 @@
     // Put setup code here. This method is called before the invocation of each test method in the class.
     
     self.testSortA = [[NSMutableArray alloc] init];
-    NSUInteger count = 10000;
-    for (NSUInteger i = 0; i < count; i++)
+    for (NSUInteger i = 0; i < arraySize; i++)
     {
-        NSUInteger n = arc4random() % (count + 1);
+        NSUInteger n = arc4random() % (arraySize + 1);
         [self.testSortA addObject:[NSString stringWithFormat:@"%lu", (unsigned long)n]];
     }
     
