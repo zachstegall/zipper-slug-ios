@@ -14,20 +14,12 @@
 
 void swap(NSMutableArray *a, NSInteger i1, NSInteger i2)
 {
-    if (!a || [a count] == 0 ||
-        i1 == i2 ||
-        i1 < 0 || i1 >= [a count] ||
-        i2 < 0 || i2 >= [a count])
+    if (i1 == i2)
         return;
     
     id temp1 = a[i1];
-    id temp2 = a[i2];
-    
-    [a removeObjectAtIndex:i1];
-    [a insertObject:temp2 atIndex:i1];
-    
-    [a removeObjectAtIndex:i2];
-    [a insertObject:temp1 atIndex:i2];
+    a[i1] = a[i2];
+    a[i2] = temp1;
 }
 
 

@@ -82,7 +82,7 @@ NSInteger binarySearch(NSArray *b, NSInteger count, id val)
     {
         q = floor((r + p) / 2);
         
-        ZSComparisonResult cr = compare(b[q], val);
+        ZSComparisonResult cr = compare(val, b[q]);
         if (cr == ZSCR_EQUAL_TO)
             return q;
         else if (cr == ZSCR_LESS_THAN)
@@ -101,7 +101,7 @@ NSInteger recursiveBinarySearch(NSArray *b, NSInteger count, id val, NSUInteger 
         return NSNotFound;
     
     NSUInteger q = floor((p + r) / 2);
-    ZSComparisonResult cr = compare(b[q], val);
+    ZSComparisonResult cr = compare(val, b[q]);
     if (cr == ZSCR_EQUAL_TO)
         return q;
     else if (cr == ZSCR_LESS_THAN)

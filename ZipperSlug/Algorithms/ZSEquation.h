@@ -1,5 +1,5 @@
 //
-//  ZSCombination.h
+//  ZSEquation.h
 //  ZipperSlug
 //
 //  Created by Zachary Stegall on 6/9/16.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ZSCombination : NSObject
+@interface ZSEquation : NSObject
 
 /**
  
@@ -16,8 +16,8 @@
  @param
  @param
  @return
- */
-+(NSArray *)findAllCombinations:(NSArray *)allValues;
+*/
+NSUInteger factorial(NSUInteger num);
 
 /**
  
@@ -25,7 +25,7 @@
  @param
  @param
  @return
- */
-+(NSInteger)totalCombinations:(NSInteger)valCount;
+*/
+NSInteger combinations(NSInteger groupSize, NSInteger arraySize);
 
 @end
