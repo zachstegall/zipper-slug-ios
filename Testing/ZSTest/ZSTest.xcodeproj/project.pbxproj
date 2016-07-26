@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD027AAE1D40B3DC0095D614 /* Problem.m in Sources */ = {isa = PBXBuildFile; fileRef = CD027AAD1D40B3DC0095D614 /* Problem.m */; };
+		CD027AC71D467CF70095D614 /* BTree.m in Sources */ = {isa = PBXBuildFile; fileRef = CD027AC61D467CF70095D614 /* BTree.m */; };
 		CDC92DF41D37E94F00DA7A4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC92DF31D37E94F00DA7A4F /* main.m */; };
 		CDC92DF71D37E94F00DA7A4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC92DF61D37E94F00DA7A4F /* AppDelegate.m */; };
 		CDC92E181D37ECE900DA7A4F /* libZipperSlug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC92E171D37ECE900DA7A4F /* libZipperSlug.a */; };
@@ -27,6 +29,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD027AAB1D40B3BE0095D614 /* ZipperSlugProblems.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZipperSlugProblems.h; path = prob_Headers/ZipperSlugProblems.h; sourceTree = SOURCE_ROOT; };
+		CD027AAC1D40B3BE0095D614 /* ZSProblem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZSProblem.h; path = prob_Headers/ZSProblem.h; sourceTree = SOURCE_ROOT; };
+		CD027AAD1D40B3DC0095D614 /* Problem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem.m; sourceTree = "<group>"; };
+		CD027AB41D4137E20095D614 /* ZSNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZSNode.h; path = prob_Headers/ZSNode.h; sourceTree = SOURCE_ROOT; };
+		CD027AC61D467CF70095D614 /* BTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTree.m; sourceTree = "<group>"; };
+		CD027AC91D467EE10095D614 /* ZSPairTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZSPairTreeNode.h; path = tree_Headers/ZSPairTreeNode.h; sourceTree = SOURCE_ROOT; };
+		CD027ACA1D467EE10095D614 /* ZSTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZSTree.h; path = tree_Headers/ZSTree.h; sourceTree = SOURCE_ROOT; };
+		CD027ACB1D467EE10095D614 /* ZSTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZSTreeNode.h; path = tree_Headers/ZSTreeNode.h; sourceTree = SOURCE_ROOT; };
+		CD027ACC1D467F000095D614 /* ZipperSlugBTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZipperSlugBTree.h; path = btree_Headers/ZipperSlugBTree.h; sourceTree = SOURCE_ROOT; };
+		CD027ACD1D467F000095D614 /* ZSBTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZSBTree.h; path = btree_Headers/ZSBTree.h; sourceTree = SOURCE_ROOT; };
+		CD027ACE1D467F000095D614 /* ZSBTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZSBTreeNode.h; path = btree_Headers/ZSBTreeNode.h; sourceTree = SOURCE_ROOT; };
 		CDC92DEF1D37E94F00DA7A4F /* ZSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC92DF31D37E94F00DA7A4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CDC92DF51D37E94F00DA7A4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,6 +79,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD027AAA1D40B3AE0095D614 /* prob_Headers */ = {
+			isa = PBXGroup;
+			children = (
+				CD027AAB1D40B3BE0095D614 /* ZipperSlugProblems.h */,
+				CD027AAC1D40B3BE0095D614 /* ZSProblem.h */,
+				CD027AB41D4137E20095D614 /* ZSNode.h */,
+			);
+			name = prob_Headers;
+			sourceTree = "<group>";
+		};
+		CD027AC01D467CC40095D614 /* btree_Headers */ = {
+			isa = PBXGroup;
+			children = (
+				CD027ACC1D467F000095D614 /* ZipperSlugBTree.h */,
+				CD027ACD1D467F000095D614 /* ZSBTree.h */,
+				CD027ACE1D467F000095D614 /* ZSBTreeNode.h */,
+			);
+			name = btree_Headers;
+			sourceTree = "<group>";
+		};
+		CD027AC81D467DF80095D614 /* tree_Headers */ = {
+			isa = PBXGroup;
+			children = (
+				CD027AC91D467EE10095D614 /* ZSPairTreeNode.h */,
+				CD027ACA1D467EE10095D614 /* ZSTree.h */,
+				CD027ACB1D467EE10095D614 /* ZSTreeNode.h */,
+			);
+			name = tree_Headers;
+			sourceTree = "<group>";
+		};
 		CDC92DE61D37E94F00DA7A4F = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +134,10 @@
 				CDC92DF51D37E94F00DA7A4F /* AppDelegate.h */,
 				CDC92DF61D37E94F00DA7A4F /* AppDelegate.m */,
 				CDC92E031D37E94F00DA7A4F /* Info.plist */,
+				CD027AC81D467DF80095D614 /* tree_Headers */,
+				CD027AC01D467CC40095D614 /* btree_Headers */,
 				CDC92E191D37ED0300DA7A4F /* algo_Headers */,
+				CD027AAA1D40B3AE0095D614 /* prob_Headers */,
 				CDC92DF21D37E94F00DA7A4F /* Supporting Files */,
 			);
 			path = ZSTest;
@@ -121,6 +167,8 @@
 		CDC92E251D37ED2A00DA7A4F /* Functional */ = {
 			isa = PBXGroup;
 			children = (
+				CD027AC61D467CF70095D614 /* BTree.m */,
+				CD027AAD1D40B3DC0095D614 /* Problem.m */,
 				CDC92E311D37FD0A00DA7A4F /* Search.m */,
 				CDC92E2F1D37FBC800DA7A4F /* Sort.m */,
 				CDC92E261D37ED2A00DA7A4F /* Functional.m */,
@@ -236,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDC92E321D37FD0A00DA7A4F /* Search.m in Sources */,
+				CD027AC71D467CF70095D614 /* BTree.m in Sources */,
+				CD027AAE1D40B3DC0095D614 /* Problem.m in Sources */,
 				CDC92E271D37ED2A00DA7A4F /* Functional.m in Sources */,
 				CDC92E301D37FBC800DA7A4F /* Sort.m in Sources */,
 			);

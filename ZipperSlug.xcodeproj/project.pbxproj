@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD027AA81D4053EF0095D614 /* NSString+ZSString.m in Sources */ = {isa = PBXBuildFile; fileRef = CD027AA71D4053EF0095D614 /* NSString+ZSString.m */; };
+		CD027ABB1D43E5DF0095D614 /* ZSBTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CD027ABA1D43E5DF0095D614 /* ZSBTreeNode.m */; };
+		CD027ABE1D43E6030095D614 /* ZSBTree.m in Sources */ = {isa = PBXBuildFile; fileRef = CD027ABD1D43E6030095D614 /* ZSBTree.m */; };
 		CD0C09801D184AA000E78C39 /* ZSLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C097D1D184AA000E78C39 /* ZSLinkedList.m */; };
 		CD0C09841D184AAD00E78C39 /* ZSStack.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09831D184AAD00E78C39 /* ZSStack.m */; };
 		CD0C09871D184C9400E78C39 /* ZSStackArray.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0C09861D184C9400E78C39 /* ZSStackArray.m */; };
@@ -41,6 +44,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CD027AA61D4053EF0095D614 /* NSString+ZSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ZSString.h"; path = "Categories/NSString+ZSString.h"; sourceTree = "<group>"; };
+		CD027AA71D4053EF0095D614 /* NSString+ZSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ZSString.m"; path = "Categories/NSString+ZSString.m"; sourceTree = "<group>"; };
+		CD027AA91D40B3400095D614 /* ZipperSlugProblems.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZipperSlugProblems.h; sourceTree = "<group>"; };
+		CD027AB91D43E5DF0095D614 /* ZSBTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSBTreeNode.h; path = "DataStructures/Tree/B-Tree/ZSBTreeNode.h"; sourceTree = "<group>"; };
+		CD027ABA1D43E5DF0095D614 /* ZSBTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSBTreeNode.m; path = "DataStructures/Tree/B-Tree/ZSBTreeNode.m"; sourceTree = "<group>"; };
+		CD027ABC1D43E6030095D614 /* ZSBTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSBTree.h; path = "DataStructures/Tree/B-Tree/ZSBTree.h"; sourceTree = "<group>"; };
+		CD027ABD1D43E6030095D614 /* ZSBTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSBTree.m; path = "DataStructures/Tree/B-Tree/ZSBTree.m"; sourceTree = "<group>"; };
+		CD027ABF1D467B220095D614 /* ZipperSlugBTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZipperSlugBTree.h; sourceTree = "<group>"; };
 		CD0C092D1D09CE0A00E78C39 /* libZipperSlug.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZipperSlug.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0C097C1D184AA000E78C39 /* ZSLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSLinkedList.h; path = DataStructures/LinkedList/ZSLinkedList.h; sourceTree = "<group>"; };
 		CD0C097D1D184AA000E78C39 /* ZSLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSLinkedList.m; path = DataStructures/LinkedList/ZSLinkedList.m; sourceTree = "<group>"; };
@@ -97,6 +108,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD027AA21D4053970095D614 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CD027AA61D4053EF0095D614 /* NSString+ZSString.h */,
+				CD027AA71D4053EF0095D614 /* NSString+ZSString.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		CD027AB81D43E5C20095D614 /* B-Tree */ = {
+			isa = PBXGroup;
+			children = (
+				CD027ABC1D43E6030095D614 /* ZSBTree.h */,
+				CD027ABD1D43E6030095D614 /* ZSBTree.m */,
+				CD027AB91D43E5DF0095D614 /* ZSBTreeNode.h */,
+				CD027ABA1D43E5DF0095D614 /* ZSBTreeNode.m */,
+			);
+			name = "B-Tree";
+			sourceTree = "<group>";
+		};
 		CD0C09241D09CE0A00E78C39 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				CDE3F0FF1D37713C008E7EA5 /* ZipperSlugAlgorithms.h */,
+				CD027AA91D40B3400095D614 /* ZipperSlugProblems.h */,
+				CD027ABF1D467B220095D614 /* ZipperSlugBTree.h */,
+				CD027AA21D4053970095D614 /* Categories */,
 				CDE3F0F51D3770F6008E7EA5 /* Problems */,
 				CD0C093A1D09D1DB00E78C39 /* Algorithms */,
 				CD0C097B1D184A7600E78C39 /* DataStructures */,
@@ -212,6 +246,7 @@
 				CDFD81A71D220BAE00176B9F /* ZSTree.m */,
 				CDFD81A91D220C7D00176B9F /* ZSTreeNode.h */,
 				CDFD81AA1D220C7D00176B9F /* ZSTreeNode.m */,
+				CD027AB81D43E5C20095D614 /* B-Tree */,
 				CDFD81AC1D220D2A00176B9F /* ZSPairTreeNode.h */,
 				CDFD81AD1D220D2A00176B9F /* ZSPairTreeNode.m */,
 			);
@@ -279,18 +314,21 @@
 				CD0C09841D184AAD00E78C39 /* ZSStack.m in Sources */,
 				CDD62AD91D360F1500DFE5FA /* ZSGraphMatrix.m in Sources */,
 				CD0C09801D184AA000E78C39 /* ZSLinkedList.m in Sources */,
+				CD027AA81D4053EF0095D614 /* NSString+ZSString.m in Sources */,
 				CDE3F0FE1D377110008E7EA5 /* ZSProblem.m in Sources */,
 				CDFD81B11D220DA700176B9F /* ZSLLNode.m in Sources */,
 				CDE3F0F31D3770EA008E7EA5 /* ZSSearch.m in Sources */,
 				CDE3F0F01D3770EA008E7EA5 /* ZSCompare.m in Sources */,
 				CDD62AD31D360EB100DFE5FA /* ZSGraph.m in Sources */,
 				CDD62AD61D360F0B00DFE5FA /* ZSGraphList.m in Sources */,
+				CD027ABB1D43E5DF0095D614 /* ZSBTreeNode.m in Sources */,
 				CDFD81AB1D220C7D00176B9F /* ZSTreeNode.m in Sources */,
 				CDE3F0FC1D377110008E7EA5 /* ZSCombination.m in Sources */,
 				CDE3F0F11D3770EA008E7EA5 /* ZSConversion.m in Sources */,
 				CDE3F0F21D3770EA008E7EA5 /* ZSEquation.m in Sources */,
 				CDFD81AE1D220D2A00176B9F /* ZSPairTreeNode.m in Sources */,
 				CDE3F0F41D3770EA008E7EA5 /* ZSSort.m in Sources */,
+				CD027ABE1D43E6030095D614 /* ZSBTree.m in Sources */,
 				CD0C09871D184C9400E78C39 /* ZSStackArray.m in Sources */,
 				CDE3F0FD1D377110008E7EA5 /* ZSPermutation.m in Sources */,
 			);

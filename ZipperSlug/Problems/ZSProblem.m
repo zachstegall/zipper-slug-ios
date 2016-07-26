@@ -7,6 +7,7 @@
 //
 
 #import "ZSProblem.h"
+#import "NSString+ZSString.h"
 
 @implementation ZSProblem
 
@@ -20,10 +21,6 @@
     fibonacciSequence(f, num);
     return f;
 }
-
-
-
-#pragma mark - Fibonacci Helpers
 
 
 NSInteger fibonacciSequence(NSMutableArray *sequenceArray, NSInteger num)
@@ -41,6 +38,42 @@ NSInteger fibonacciSequence(NSMutableArray *sequenceArray, NSInteger num)
     NSNumber *n = [NSNumber numberWithInteger:i];
     [sequenceArray addObject:n];
     return i;
+}
+
+
+
+#pragma mark - Strings
+
+
++(BOOL)isString:(NSString *)sub subStringOf:(NSString *)full
+{
+    return true;
+}
+
+BOOL containsSubstring(NSString *sub, NSString *full)
+{
+    return false;
+}
+
+BOOL recursiveContainsSubstring(NSString *full, NSString *sub, NSUInteger pos)
+{
+    return false;
+}
+
+
+
+#pragma mark - Trees
+
+
++(NSString *)equationFromTree:(ZSTree *)t
+{
+    NSMutableString *s = [[NSMutableString alloc] init];
+    for (NSString *v in [t traverseTree:ZSTO_POST])
+    {
+        [s appendString:v];
+    }
+    
+    return s;
 }
 
 

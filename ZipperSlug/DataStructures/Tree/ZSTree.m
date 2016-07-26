@@ -10,7 +10,6 @@
 
 
 @interface ZSTree()
-@property (nullable, readwrite) ZSTreeNode *root;
 @property (readwrite) ZSTreeNodeType type;
 @end
 
